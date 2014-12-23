@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/apache"/>
+	<classpathentry kind="src" path="src/core"/>
+	<classpathentry kind="src" path="src/gson"/>
+	<classpathentry kind="src" path="src/httpserver"/>
+	<classpathentry kind="src" path="src/jdownloader"/>
+	<classpathentry kind="src" path="src/jmdns"/>
+	<classpathentry kind="src" path="src/json"/>
+	<classpathentry kind="src" path="src/mp4parser"/>
+	<classpathentry kind="src" path="src/okhttp"/>
+	<classpathentry kind="src" path="src/vuze"/>
+	<classpathentry kind="src" path="src/jlibtorrent"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

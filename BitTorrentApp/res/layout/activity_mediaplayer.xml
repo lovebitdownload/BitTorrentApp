@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Created by Angel Leon (@gubatron), Alden Torres (aldenml)
+ * Copyright (c) 2011-2013, FrostWire(R). All rights reserved.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_mediaplayer_root"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mediaplayer_header_background"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp" >
+
+        <ImageButton
+            android:id="@+id/activity_mediaplayer_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_ab_back" />
+
+        <ImageButton
+            android:id="@+id/activity_mediaplayer_button_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_menu_moreoverflow" />
+
+        <TextView
+            android:id="@+id/activity_mediaplayer_artist"
+            style="@style/MediaPlayerHeaderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/activity_mediaplayer_button_menu"
+            android:layout_toRightOf="@id/activity_mediaplayer_button_back"
+            android:gravity="center_horizontal"
+            android:text="@string/dummy_title" />
+
+        <TextView
+            android:id="@+id/activity_mediaplayer_title"
+            style="@style/MediaPlayerHeaderTitleBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/activity_mediaplayer_artist"
+            android:layout_alignRight="@id/activity_mediaplayer_artist"
+            android:layout_below="@id/activity_mediaplayer_artist"
+            android:gravity="center_horizontal"
+            android:text="@string/dummy_title" />
+
+        <TextView
+            android:id="@+id/activity_mediaplayer_album"
+            style="@style/MediaPlayerHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/activity_mediaplayer_title"
+            android:layout_alignRight="@id/activity_mediaplayer_title"
+            android:layout_below="@id/activity_mediaplayer_title"
+            android:gravity="center_horizontal"
+            android:text="@string/dummy_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/activity_mediaplayer_artwork"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@drawable/artwork_default" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mediaplayer_extracontrols_background"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp" >
+
+        <TextView
+            android:id="@+id/view_media_controller_time_current"
+            style="@style/MediaPlayerNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/dummy_media_controller_time" />
+
+        <TextView
+            android:id="@+id/view_media_controller_time_end"
+            style="@style/MediaPlayerNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/view_media_controller_time_current"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginRight="8dp"
+            android:text="@string/dummy_media_controller_time" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/view_media_controller_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_dark_blue_highlight"
+        android:padding="0sp"
+        android:progress="10"
+        android:progressDrawable="@drawable/player_seek_progress_horizontal"
+        android:thumb="@drawable/player_seekbar_thumb" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mediaplayer_bottom_background"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/activity_mediaplayer_button_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_playback_previous"
+            android:contentDescription="@null" />
+
+        <ImageButton
+            android:id="@+id/activity_mediaplayer_button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_playback_play"
+            android:contentDescription="@null" />
+
+        <ImageButton
+            android:id="@+id/activity_mediaplayer_button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_playback_next"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ff1d2934" />
+
+    <com.bt.download.android.gui.views.DonationsView
+        android:id="@+id/activity_mediaplayer_donations_view_placeholder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

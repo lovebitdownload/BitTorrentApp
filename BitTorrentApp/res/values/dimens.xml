@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Created by Angel Leon (@gubatron), Alden Torres (aldenml)
+ * Copyright (c) 2011, 2012, FrostWire(R). All rights reserved.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+-->
+<resources>
+
+    <dimen name="mainmenu_width">250dp</dimen>
+    <dimen name="mainmenu_shadow_width">15dp</dimen>
+    
+    <!-- Notification template -->
+    <dimen name="notification_big_icon_height">64.0dip</dimen>
+    <dimen name="notification_big_icon_width">64.0dip</dimen>
+    <dimen name="notification_info_container_padding_left">8.0dip</dimen>
+    <dimen name="notification_info_container_padding_bottom">4.0dip</dimen>
+    <dimen name="notification_action_padding">8.0dip</dimen>
+    <dimen name="notification_action_height">48.0dip</dimen>
+    <dimen name="notification_action_width">48.0dip</dimen>
+    
+    <!-- Notification template expanded -->
+    <dimen name="notification_expanded_height">128.0dip</dimen>
+    <dimen name="notification_expanded_buttons_divider_padding">12.0dip</dimen>
+    <dimen name="notification_expanded_button_height">48.0dip</dimen>
+    <dimen name="notification_expanded_button_padding">10.0dip</dimen>
+    <dimen name="notification_expanded_content_padding_top">8.0dip</dimen>
+    <dimen name="notification_expanded_collapse_padding">8.0dip</dimen>
+    
+    <!-- Audio player -->
+    <dimen name="audio_player_header_height">80dp</dimen>
+    <dimen name="audio_player_header_padding">16dp</dimen>
+    <dimen name="audio_player_switch_padding">10.0dip</dimen>
+    <dimen name="audio_player_time_width">52.0dip</dimen>
+    <dimen name="audio_player_controls_end_button_width">50.0dip</dimen>
+    <dimen name="audio_player_controls_end_button_height">50.0dip</dimen>
+    <dimen name="audio_player_controls_main_button_width">58.0dip</dimen>
+    <dimen name="audio_player_controls_main_button_height">58.0dip</dimen>
+    <dimen name="audio_player_donation_controls_height">80dp</dimen>
+    
+    <!-- Shadow height -->
+    <dimen name="shadow_height">5.0dip</dimen>
+    
+    <!-- Text sizes -->
+    <dimen name="text_size_extra_micro">10.0sp</dimen>
+    <dimen name="text_size_micro">12.0sp</dimen>
+    <dimen name="text_size_small">14.0sp</dimen>
+    <dimen name="text_size_medium">16.0sp</dimen>
+    <dimen name="text_size_large">18.0sp</dimen>
+    <dimen name="text_size_x_large">24.0sp</dimen>
+    <dimen name="text_size_dayum">36.0sp</dimen>
+    
+    <!-- Colorstrip -->
+    <dimen name="colorstrip_height">2.0dip</dimen>
+    
+    <!-- Drag and drop -->
+    <dimen name="drag_and_drop_handle">26.0dip</dimen>
+    
+    <!-- List and grid view padding -->
+    <dimen name="list_preferred_item_padding">10.0dip</dimen>
+    <!-- List view fast scroll padding left -->
+    <dimen name="fast_scroll_padding_left">8.0dip</dimen>
+    <!-- List view fast scroll padding right -->
+    <dimen name="fast_scroll_padding_right">8.0dip</dimen>
+    <!-- grid view vertical and horizontal spacing -->
+    <dimen name="grid_item_spacing">4.0dip</dimen>
+    <!-- List item detailed height -->
+    <dimen name="list_item_detailed_height">120.0dip</dimen>
+    <!-- Top margin of "line_two" -->
+    <dimen name="list_item_line_two_margin_top">8.0dip</dimen>
+    <!-- Left padding in the grid text -->
+    <dimen name="grid_item_padding_left">8.0dip</dimen>
+    <!-- Grid and list item normal height -->
+    <dimen name="item_normal_height">64.0dip</dimen>
+    
+    <!-- Donations View -->
+    <dimen name="view_donations_button_width">50dp</dimen>
+    
+
+</resources>

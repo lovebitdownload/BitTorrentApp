@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Created by Angel Leon (@gubatron), Alden Torres (aldenml)
+ * Copyright (c) 2011-2013, FrostWire(R). All rights reserved.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_main_search"
+        android:icon="@drawable/menu_icon_search"
+        android:title="@string/search">
+    </item>
+    <item
+        android:id="@+id/menu_main_library"
+        android:icon="@drawable/menu_icon_library"
+        android:title="@string/my_files">
+    </item>
+    <item
+        android:id="@+id/menu_main_transfers"
+        android:icon="@drawable/menu_icon_transfers"
+        android:title="@string/transfers">
+    </item>
+    <item
+        android:id="@+id/menu_main_peers"
+        android:icon="@drawable/menu_icon_peers"
+        android:title="@string/wifi_sharing">
+    </item>
+    <item
+        android:id="@+id/menu_main_preferences"
+        android:icon="@drawable/menu_icon_preferences"
+        android:title="@string/preferences">
+    </item>
+    <item
+        android:id="@+id/menu_main_about"
+        android:icon="@drawable/menu_icon_about"
+        android:title="@string/about">
+    </item>
+    <item
+        android:id="@+id/menu_main_shutdown"
+        android:icon="@drawable/menu_icon_exit"
+        android:title="@string/exit">
+    </item>
+
+</menu>

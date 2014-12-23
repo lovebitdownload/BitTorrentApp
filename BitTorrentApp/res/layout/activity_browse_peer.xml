@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Created by Angel Leon (@gubatron), Alden Torres (aldenml)
+ * Copyright (c) 2011-2014, FrostWire(R). All rights reserved.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" >
+
+        <ImageButton
+            android:id="@+id/activity_browse_peer_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_ab_back" />
+
+        <TextView
+            android:id="@+id/activity_browse_peer_text_nickname"
+            style="@style/BrowsePeerActivityHeaderNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="6dp"
+            android:text="@string/dummy_nickname" />
+
+        <TextView
+            android:id="@+id/activity_browse_peer_text_title"
+            style="@style/BrowsePeerActivityHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_browse_peer_text_nickname"
+            android:layout_centerHorizontal="true"
+            android:text="@string/dummy_nickname" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/activity_browse_peer_fragment"
+        android:name="com.bt.download.android.gui.fragments.BrowsePeerFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.bt.download.android.gui.views.PlayerNotifierView
+        android:id="@+id/activity_browse_peer_player_notifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>
